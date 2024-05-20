@@ -2,12 +2,13 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+
+      "question": "Answer the questions given below (refer Fig.2):<br> <center> <img src='images/pos1.png' height='300px'><br><br>Fig. 2. Circuit configuration of AC voltage controller.</center><br><br> 1. What is the possible range of firing angle to control the AC voltage?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "0&#176; to 90&#176;",
+        "b": "0&#176; to 180&#176;",
+        "c": "0&#176; to 360&#176;",
+        "d": "180&#176; to 360&#176;"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,16 +16,76 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
+
     {
-      "question": "This is a Sample Question 2?",
+
+      "question": "2. If firing angle is 45&#176;, and extinction angle is 210&#176; what will be the conduction angle?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "255&#176;",
+        "b": "165&#176;",
+        "c": "135&#176;",
+        "d": "30&#176;"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+
+    {
+ 
+      "question": "3. A single-phase half wave AC voltage controller consists of",
+      "answers": {
+        "a": "one SCR in parallel with one diode",
+        "b": "one SCR in anti-parallel with one diode",
+        "c": "two SCRs in parallel",
+        "d": "two SCRs in anti-parallel"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    
+    {
+
+      "question": "4. An 180 V, 50 Hz supply voltage is given to an AC voltage controller. What will be the input power factor if the firing angle is 60&#176;?",
+      "answers": {
+        
+        "a": "Zero",
+        "b": "Unity",
+        "c": "0.85",
+        "d": "0.9"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+            
+    {
+
+      "question": "5. Maximum voltage (V<sub>max</sub>) across the SCR at firing angles 30&#176; and 150&#176; will be (V<sub>m</sub> is the peak source voltage):",
+      "answers": {
+        "a": "V<sub>max</sub> (at 30&#176;) = V<sub>m</sub>,                      V<sub>max</sub> (at 150&#176;) = V<sub>m</sub>",
+        "b": "V<sub>max</sub> (at 30&#176;) = V<sub>m</sub> sin(30&#176;),        V<sub>max</sub> (at 150&#176;) = V<sub>m</sub> sin(150&#176;)",
+        "c": "V<sub>max</sub> (at 30&#176;) = V<sub>m</sub> sin(30&#176;),        V<sub>max</sub> (at 150&#176;) = V<sub>m</sub>",
+        "d": "V<sub>max</sub> (at 30&#176;) = V<sub>m</sub>,                      V<sub>max</sub> (at 150&#176;) = V<sub>m</sub>sin(150&#176;)"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
