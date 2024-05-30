@@ -4650,12 +4650,12 @@ concept_development: new Dom(".concept_development"),
               if(Scenes.currentStep == 9 || Scenes.currentStep == 10 || Scenes.currentStep == 11){
                   console.log("step:",Scenes.currentStep)
                   let betaTempText = Scenes.items.tempTitle41
-                  let first = 183.6
-                  let second = 194.1
+                  let first = 363.6
+                  let second = 374.1
                   let load_1 = 100
                   let betaDeg = (values.R == load_1 ? first : second)
                   if(slider_D.value <= 30){
-                      betaDeg = 180
+                      betaDeg = 360
                   }
                   betaTempText.setContent(betaDeg)
               }
