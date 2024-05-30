@@ -212,9 +212,9 @@ const Formulas = {
             }
         },
         betaDeg(values){
-            let conditionBased = 180
-            let first = 183.6
-            let second = 194.1
+            let conditionBased = 360
+            let first = 363.6
+            let second = 374.1
             let ans = 0
             switch(values.R){
                 case this.load_1:
@@ -232,9 +232,9 @@ const Formulas = {
         beta(values){
             // 0 15 - beta 180deg
             // >= 194.1
-            let conditionBased = 180
-            let first = 183.6
-            let second = 194.1
+            let conditionBased = 360
+            let first = 363.6
+            let second = 374.1
             let ans = 0
             switch(values.R){
                 case this.load_1:
