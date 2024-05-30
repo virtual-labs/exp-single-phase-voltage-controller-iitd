@@ -271,6 +271,9 @@ const setIsProcessRunning = (value) => {
   isRunning = value;
   if(value){
     Dom.hideAll()
+    // remove speech after step done
+    setCC("")
+    window.speechSynthesis.cancel()
   }
 };
 
@@ -3530,8 +3533,6 @@ concept_development: new Dom(".concept_development"),
       Scenes.items.part3_table_four.hide()
       Scenes.items.part3_table_four_2.hide()
 
-      Dom.setBlinkArrowRed(true,499, 60, 30,30,180).play()
-      // Dom.setBlinkArrowRed(true,499, 276, 30,30,180).play()
       let rightTicks = [
         Scenes.items.right_tick_1.set(559,1,20).hide(),
         Scenes.items.right_tick_2.set(559,216,20).hide(),
@@ -3568,7 +3569,7 @@ concept_development: new Dom(".concept_development"),
         Scenes.steps[0+9]()
       }
       const opTwo = ()=>{
-      
+        if(Scenes.optionsDone[0] == 0){ return }
         Scenes.optionsDone[1]=1;
         Scenes.forMathematicalExpressionBtn = 2
         Scenes.steps[1+9]()
@@ -3581,8 +3582,10 @@ concept_development: new Dom(".concept_development"),
       // rightTicks[1].item.onclick = opTwo
 
       if((Scenes.optionsDone[0] == 0 && Scenes.optionsDone[1] == 0) || Scenes.optionsDone[1] == 1){
+        Dom.setBlinkArrowRed(true,499, 60, 30,30,180).play()
         setCC("First select the Fully controlled AC Voltage controller and proceed for experimentation")
       }else if(Scenes.optionsDone[0] == 1){
+        Dom.setBlinkArrowRed(true,499, 276, 30,30,180).play()
         setCC("Select the semicontrolled AC Voltage controller and proceed for experimentation")
       }
 
@@ -4056,8 +4059,8 @@ concept_development: new Dom(".concept_development"),
             
             sliders.d.oninput = (e)=>{
               // sliders.d.input()
-              Dom.setBlinkArrowRed(true,788,300,null,null,-90).play()
-              setCC("Press the 'Record' Button")
+              // Dom.setBlinkArrowRed(true,788,300,null,null,-90).play()
+              // setCC("Press the 'Record' Button")
               
               let slider_D = document.querySelector(".slider_D")
               let sliderImg = document.querySelector(".slider-D-arrow")
@@ -4074,8 +4077,22 @@ concept_development: new Dom(".concept_development"),
               }
               val = ((slider_D.value * 95) / 109) - 7
               sliderImg.style.left = `${102.5 + val}px`
+
+              // ! update the text accroding to value
+              if(Scenes.currentStep == 9 || Scenes.currentStep == 10 || Scenes.currentStep == 11){
+                  console.log("step:",Scenes.currentStep)
+                  let betaTempText = Scenes.items.tempTitle41
+                  let first = 183.6
+                  let second = 194.1
+                  let load_1 = 100
+                  let betaDeg = (values.R == load_1 ? first : second)
+                  if(slider_D.value <= 30){
+                      betaDeg = 180
+                  }
+                  betaTempText.setContent(betaDeg)
+              }
             }
-        }else{
+        }else if(recordBtnClickIdx == 6){
           Dom.setBlinkArrowRed(true,788,300,null,null,-90).play()
           setCC("Press the 'Record' Button")
         }
@@ -4449,10 +4466,10 @@ concept_development: new Dom(".concept_development"),
                 setCC("Click 'Next' to go to next step");
                 Dom.setBlinkArrow(true, 790, 544).play();
                 setIsProcessRunning(false);
-                Scenes.currentStep = 8
+                Scenes.currentStep = 11
               }, 12000);
               // showArrowForAll()
-              setCC("In AC voltage controller the waveform distortion is more at higher firing angles and thus THD is high.")
+              setCC("The DC-offset in the load voltage incarease with an increase in firing angle.")
             },
             arrows: [
               ()=>Dom.setBlinkArrowRed(true,772,90,30,null,90).play(),
@@ -4547,7 +4564,7 @@ concept_development: new Dom(".concept_development"),
           return
         }
         let rows = table.tBodies[0].rows
-        let n = 11
+        let n = 7
         
         for(let i=1;i<n;i++){
           rows[recordBtnClickIdx-1].cells[i].innerHTML = "" ;
@@ -4630,7 +4647,7 @@ concept_development: new Dom(".concept_development"),
               sliderImg.style.left = `${102.5 + val}px`
 
               // ! update the text accroding to value
-              if(Scenes.currentStep == 10 || Scenes.currentStep == 11){
+              if(Scenes.currentStep == 9 || Scenes.currentStep == 10 || Scenes.currentStep == 11){
                   console.log("step:",Scenes.currentStep)
                   let betaTempText = Scenes.items.tempTitle41
                   let first = 183.6
@@ -4644,7 +4661,7 @@ concept_development: new Dom(".concept_development"),
               }
             }
 
-        }else{
+          }else if(recordBtnClickIdx == 6){
           Dom.setBlinkArrowRed(true,788,300,null,null,-90).play()
           setCC("Press the 'Record' Button")
         }
@@ -4769,8 +4786,8 @@ concept_development: new Dom(".concept_development"),
       // }
       
       setCC("Here an example application of AC voltage controller is demonstrated for speed control of fan.")
-      setCC(" Using the firing angle control the speed of fan can easily be changed as per the requirement.")
-      setCC("For better understanding of AC voltage controller power control use manual adjustment of firing angle.")
+      setCC("Using the firing angle control the speed of fan can easily be changed as per the requirement.")
+      sliders.d.onclick = ()=>{}
 
       let slider_circuit = new Dom(".slider-circuit-helper").set(70.6,56,105,151)
 
@@ -4826,7 +4843,6 @@ concept_development: new Dom(".concept_development"),
 
           let timeSpeed = min + (diffAngle * sliderValue)
           animeFanRotating(timeSpeed)
-          console.log(sliderValue,timeSpeed)
           return timeSpeed
       }
       let animeSliderAuto = anime({
@@ -4857,6 +4873,7 @@ concept_development: new Dom(".concept_development"),
       Scenes.items.btn_auto.item.onclick = ()=>{
         animeSliderAuto.play()
       }
+      let simulationDone = false
       Scenes.items.btn_manual.item.onclick = ()=>{
         if(animeSliderAuto!=null){
           animeSliderAuto.pause()
@@ -4874,9 +4891,15 @@ concept_development: new Dom(".concept_development"),
         // }
         
         sliders.d.onchange = ()=>{
-          console.log(sliders.d.value, generatingValue(sliders.d.value))
+          generatingValue(sliders.d.value)
+          if(!simulationDone){
+            setCC("Simulation Done")
+            Dom.setBlinkArrowRed(-1)
+            simulationDone = true
+          }
         }
       }
+      Scenes.items.btn_manual.item.click()
       return true
     }),
   ],
@@ -4902,7 +4925,7 @@ concept_development: new Dom(".concept_development"),
     }
     if (this.currentStep < this.steps.length) {
       if (this.steps[this.currentStep]()) {
-        if(this.currentStep >= 6){
+        if(this.currentStep==2 || this.currentStep >= 6){
           
           nextDrawerItem();
           nextProgressBar();

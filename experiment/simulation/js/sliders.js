@@ -23,7 +23,7 @@ const sliders = {
             sliderImg.style.left = `${102.5 + val}px`
 
             // ! update the text accroding to value
-            if(Scenes.currentStep == 10 || Scenes.currentStep == 11){
+            if(Scenes.currentStep == 9 || Scenes.currentStep == 10 || Scenes.currentStep == 11){
                 let betaTempText = Scenes.items.tempTitle41
                 let first = 183.6
                 let second = 194.1
