@@ -4611,8 +4611,42 @@ concept_development: new Dom(".concept_development"),
         isLoadAndInductanceSelected = false
         Scenes.steps[10]()
       }
+      sliders.d.oninput = (e)=>{
+        // sliders.d.input()
+        // Dom.setBlinkArrowRed(true,788,300,null,null,-90).play()
+        // setCC("Press the 'Record' Button")
+        
+        let slider_D = document.querySelector(".slider_D")
+        let sliderImg = document.querySelector(".slider-D-arrow")
+        let sliderValueInput = document.querySelector(".d .value-box input")
+        let val = 0
+        
+        // slider function  
+        e = e instanceof Event
+        if(e){
+            sliderValueInput.value = slider_D.value 
+        }
+        else{
+            slider_D.value = sliderValueInput.value
+        }
+        val = ((slider_D.value * 95) / 109) - 7
+        sliderImg.style.left = `${102.5 + val}px`
 
-      let currentTableIdx = 0
+        // ! update the text accroding to value
+        if(Scenes.currentStep == 9 || Scenes.currentStep == 10 || Scenes.currentStep == 11){
+            console.log("step:",Scenes.currentStep)
+            let betaTempText = Scenes.items.tempTitle41
+            let first = 363.6
+            let second = 374.1
+            let load_1 = 100
+            let betaDeg = (values.R == load_1 ? first : second)
+            if(slider_D.value <= 30){
+                betaDeg = 360
+            }
+            betaTempText.setContent(betaDeg)
+        }
+      }
+      let currentTableIdx = 0 
       // ! onclick for record
       Scenes.items.btn_record.item.onclick = function(){
         if(!isLoadAndInductanceSelected){
