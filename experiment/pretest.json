@@ -2,13 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-
-      "question": "Answer the questions given below (refer Fig.1):<br> <center> <img src='images/pre1.png' height='300px'><br><br>Fig. 1. Circuit configuration of AC voltage controller.</center><br><br> 1. Which of the following cannot be used as a fully controlled AC-voltage controller ",
-      "answers": {        
-        "a": "Two anti-parallel SCR",
-        "b": "TRIAC",
-        "c": "Two anti-parallel Diodes",
-        "d": "None of the above"
+      "question": "This is a Sample Question 1?",
+      "answers": {
+        "a": "answer1",
+        "b": "answer2",
+        "c": "answer3",
+        "d": "answer4"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -16,75 +15,16 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
-      
     {
-
-      "question": "2. The DC component in asymmetrical AC voltage controller with SCR controlling in positive half cycle and Diode conducting in negative half cycle will be",
+      "question": "This is a Sample Question 2?",
       "answers": {
-        "a": "Positive",
-        "b": "Negative",
-        "c": "Zero",
-        "d": "Equal to peak value of AC input voltage"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    
-    {
-
-      "question": "3. A single phase AC voltage controller is used to convert:",
-      "answers": {
-        "a": "Fixed AC voltage to variable magnitude AC voltage of same frequency",
-        "b": "Fixed AC voltage to variable frequency AC voltage of same magnitude",
-        "c": "Fixed AC voltage to variable magnitude AC voltage of variable frequency",
-        "d": "Fixed AC voltage to variable magnitude DC voltage of same frequency"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-        
-    {
-
-      "question": "4. What will be the relation between firing angle (α), extinction angle (β) and conduction angle (γ)?",
-      "answers": {
-        "a": "γ<(β-α)",
-        "b": "γ>(β-α)",
-        "c": "γ=(π+β-α)",
-        "d": "γ=(β-α)"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "d",
-      "difficulty": "beginner"
-    },
-    
-    {
-
-      "question": "5. What will be the effect of using diode in place of SCR-T<sub>1</sub>?",
-      "answers": {
-        "a": "Output voltage will be zero",
-        "b": "Output voltage will be controlled in positive half cycle but it will be zero in negative half cycle.",
-        "c": "Output voltage can be controlled only in negative half cycle of AC input voltage.",
-        "d": "SCR-T<sub>1</sub> will operate in both positive and negative half cycles."
+        "a": "answer1",
+        "b": "answer2",
+        "c": "answer3",
+        "d": "answer4"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
