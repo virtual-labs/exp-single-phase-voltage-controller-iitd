@@ -53,7 +53,7 @@ Solving the above equation
 </div><br>
 
 <div style="float: left; width:50%;">
-  <img src="images/th5.png" height="80px">
+  <img src="images/th5.png" height="90px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(3)
