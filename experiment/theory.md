@@ -15,7 +15,7 @@ The principle of operation of the above circuit can easily be understood from th
 <br>
 
 <center>
-  <img src="images/th2.png" height="350px">
+  <img src="images/th2.png" height="900px">
   
 <br>Fig. 2. Typical waveforms with R-L load (α<90&#176;).
 
@@ -28,7 +28,7 @@ Voltage appearing across load is defined by
 
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th3.png" height="65px">
+  <img src="images/th3.png" height="76px">
 </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(1)
@@ -41,7 +41,7 @@ Applying Kirchhoff’s voltage law
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th4.png" height="75px">
+  <img src="images/th4.png" height="76px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(2)
@@ -53,7 +53,7 @@ Solving the above equation
 </div><br>
 
 <div style="float: left; width:50%;">
-  <img src="images/th5.png" height="70px">
+  <img src="images/th5.png" height="80px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(3)
@@ -67,7 +67,7 @@ where
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th6.png" height="78px">
+  <img src="images/th6.png" height="48px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(4)
@@ -94,7 +94,7 @@ Let
 </div><br>
 
 <div style="float: left; width:50%;">
-  <img src="images/th8.png" height="65px">
+  <img src="images/th8.png" height="70px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     &nbsp;
@@ -109,7 +109,7 @@ For the given firing angle and R-L load parameters, the extinction angle is obta
 
 
 <div style="float: left; width:50%;">
-  <img src="images/th9.png" height="65px">
+  <img src="images/th9.png" height="75px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(6)
@@ -121,7 +121,7 @@ and conduction angle
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th10.png" height="65px">
+  <img src="images/th10.png" height="42px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(7)
@@ -133,7 +133,7 @@ The condition to get controlled output is
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th11.png" height="65px">
+  <img src="images/th11.png" height="42px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(8)
@@ -148,7 +148,7 @@ The fundamental component of load voltage can easily be obtained from the Fourie
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th12.png" height="65px">
+  <img src="images/th12.png" height="80px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(9)
@@ -161,7 +161,7 @@ where
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th13.png" height="65px">
+  <img src="images/th13.png" height="75px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(10)
@@ -174,7 +174,7 @@ and
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th14.png" height="65px">
+  <img src="images/th14.png" height="75px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(11)
@@ -187,7 +187,7 @@ Total harmonic distortion (THD) in the load voltage is given by
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th15.png" height="65px">
+  <img src="images/th15.png" height="75px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(12)
@@ -204,7 +204,7 @@ The circuit configuration of semi-controlled AC voltage controller is given in F
 </div>
 
 <center>
-  <img src="images/th16.png">
+  <img src="images/th16.png" height="360px">
   
 Fig. 3. Circuit configuration of semi-controlled AC voltage controller.
 
@@ -219,7 +219,7 @@ The corresponding waveforms are given in Fig. 4.
 </div>
 
 <center>
-  <img src="images/th17.png">
+  <img src="images/th17.png" height="900px">
   
 Fig. 3. Typical waveforms with R-load (α<90&#176;).
 
@@ -232,7 +232,7 @@ Let the source voltage be
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th18.png" height="65px">
+  <img src="images/th18.png" height="45px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(13)
@@ -246,7 +246,7 @@ Then the load voltage is
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th19.png" height="65px">
+  <img src="images/th19.png" height="75px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(14)
@@ -259,7 +259,7 @@ Hence the RMS value of load voltage is:
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th20.png" height="65px">
+  <img src="images/th20.png" height="78px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(15)
@@ -285,7 +285,7 @@ Since the output voltage is not identical in positive and negative half cycle, t
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th22.png" height="65px">
+  <img src="images/th22.png" height="70px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(17)
