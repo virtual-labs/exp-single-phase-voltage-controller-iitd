@@ -23,3 +23,7 @@ c) Performance analysis of the circuit:
 1) Set the values of input source voltage (VS), load and firing angle (α : 0&#176; to 180&#176;).
 2) Select the “ICONS” in sequence to analyse and understand the circuit operation and its performance.
 3) Follow the instructions given in respective experiment slide and press the “RECORD” button to fill the observation table. Using these observations plot various performance characteristics.
+
+<center>
+  <img src="images/proced1.png" height="220px">
+</center>
