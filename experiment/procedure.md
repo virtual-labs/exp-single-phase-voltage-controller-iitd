@@ -1,5 +1,9 @@
 ### Procedure
 
+<center>
+  <img src="images/procedbig1.png">
+</center>
+
 a) Circuit formulation:
 <br>
 
