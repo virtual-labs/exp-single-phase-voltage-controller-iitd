@@ -11,10 +11,10 @@
         "d": "180&#176; to 360&#176;"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation 1",
+        "b": "Explanation 2: SCR conducts only in forward biased condition (after getting firing pulse).",
+        "c": "Explanation 3",
+        "d": "Explanation 4"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -30,10 +30,10 @@
         "d": "30&#176;"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation 1",
+        "b": "Explanation 2: γ=(β-α)= 210&#176; - 45&#176;",
+        "c": "Explanation 3",
+        "d": "Explanation 4"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -49,10 +49,10 @@
         "d": "two SCRs in anti-parallel"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation 1",
+        "b": "Explanation 2: SCR controls the voltage in one direction and antiparallel diode allows complete half cycle.",
+        "c": "Explanation 3",
+        "d": "Explanation 4"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -69,10 +69,10 @@
         "d": "0.9"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "Explanation 3",
+        "d": "Explanation 4: <img src='images/expl1.png' height='60px'>"
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -88,10 +88,10 @@
         "d": "V<sub>max</sub> (at 30&#176;) = V<sub>m</sub>,                      V<sub>max</sub> (at 150&#176;) = V<sub>m</sub>sin(150&#176;)"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "Explanation 3: At firing angles = 30&#176; SCR starts conducts and hence voltage across it will be zero after that. However, at firing angles = 150&#176; the maximum voltage across SCR will be V<sub>m</sub> at 90&#176;.",
+        "d": "Explanation 4"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
