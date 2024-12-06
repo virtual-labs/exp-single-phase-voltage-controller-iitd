@@ -3,7 +3,7 @@
 a) Circuit formulation:
 <br>
 
-1. Connect the circuit to form the AC Voltage Controller by selecting one of the two options
+1. Connect the circuit to form the AC Voltage Controller by selecting one of the four options
 
 2. 
     a). If all connections are correct then click on “NEXT” button and proceed for experimentation.<br>
