@@ -221,7 +221,7 @@ The corresponding waveforms are given in Fig. 4.
 <center>
   <img src="images/th17.png" height="900px">
   
-Fig. 3. Typical waveforms with R-load (α=90&#176;).
+Fig. 3. Typical waveforms with R-L load (α=90&#176;).
 
 </center>
 <br>
