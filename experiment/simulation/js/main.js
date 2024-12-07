@@ -5656,7 +5656,7 @@ const Scenes = {
 };
 
 // stepcalling
-Scenes.currentStep = 2;
+Scenes.currentStep = 1;
 Scenes.next();
 // Scenes.steps[3]()
 // Scenes.next()
@@ -5696,7 +5696,22 @@ function btnPopupBox() {
   let popupWindow = document.querySelector(".btn-popup-window");
 
   popupBtns[0].onmouseover = () => {
-    popupWindow.src = Scenes.items.formulas_procedure.item.src;
+    let procedure_2 = new Dom("formulas_procedure_slider_2")
+    let procedure_1 = new Dom("formulas_procedure_slider_1")
+    
+    switch(Scenes.realCurrentStep){
+      case 9:
+        popupWindow.src = procedure_1.item.src
+        break
+
+      case 10:
+        popupWindow.src = procedure_2.item.src
+        break
+
+      default:
+        popupWindow.src = Scenes.items.formulas_procedure.item.src
+        break
+    }
   };
   popupBtns[1].onmouseover = () => {
     popupWindow.src = Scenes.items.formulas_nomenclautre.item.src;
