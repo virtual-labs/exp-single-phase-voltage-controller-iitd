@@ -5151,7 +5151,7 @@ const Scenes = {
       );
 
       Scenes.items.circle.set(322, 346, 98).hide();
-      Scenes.items.components_r_load.set(0, -24, 462);
+      Scenes.items.components_rl_load.set(0, -24, 462);
       Scenes.items.beta_line_blinking.set(104, 134, 196).zIndex(1).hide();
 
       let btns = [
@@ -5228,7 +5228,7 @@ const Scenes = {
         });
         Scenes.items.circle.set(580, 346, 93).hide();
         Scenes.items.bnt_click.hide();
-        Scenes.items.components_r_load.hide();
+        Scenes.items.components_rl_load.hide();
 
         Dom.setBlinkArrowRed(true, 555, 10 + 80, 30, null, 0).play();
 
@@ -5371,7 +5371,7 @@ const Scenes = {
       );
 
       Scenes.items.circle.set(322, 346, 98).hide();
-      Scenes.items.components_rl_load.set(0, -24, 462);
+      Scenes.items.components_r_load.set(0, -24, 462);
       Scenes.items.beta_line_blinking.set(104, 134, 196).zIndex(1).hide();
 
       let btns = [
@@ -5445,7 +5445,7 @@ const Scenes = {
         });
         Scenes.items.circle.set(580, 346, 93).hide();
         Scenes.items.bnt_click.hide();
-        Scenes.items.components_rl_load.hide();
+        Scenes.items.components_r_load.hide();
 
         Dom.setBlinkArrowRed(true, 555, 10 + 80, 30, null, 0).play();
 
@@ -5656,7 +5656,7 @@ const Scenes = {
 };
 
 // stepcalling
-Scenes.currentStep = 1;
+Scenes.currentStep = 2;
 Scenes.next();
 // Scenes.steps[3]()
 // Scenes.next()
