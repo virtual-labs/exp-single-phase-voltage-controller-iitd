@@ -1,9 +1,13 @@
 ### Procedure
 
+<center>
+  <img src="images/procedbig1.png">
+</center>
+
 a) Circuit formulation:
 <br>
 
-1. Connect the circuit to form the AC Voltage Controller by selecting one of the two options
+1. Connect the circuit to form the AC Voltage Controller by selecting one of the four options
 
 2. 
     a). If all connections are correct then click on “NEXT” button and proceed for experimentation.<br>
@@ -23,3 +27,7 @@ c) Performance analysis of the circuit:
 1) Set the values of input source voltage (VS), load and firing angle (α : 0&#176; to 180&#176;).
 2) Select the “ICONS” in sequence to analyse and understand the circuit operation and its performance.
 3) Follow the instructions given in respective experiment slide and press the “RECORD” button to fill the observation table. Using these observations plot various performance characteristics.
+
+<center>
+  <img src="images/proced1.png" height="220px">
+</center>
